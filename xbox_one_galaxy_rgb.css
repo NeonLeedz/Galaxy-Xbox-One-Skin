@@ -1,0 +1,333 @@
+/* 
+GamePad Viewer custom skin - Xbox One Galaxy RGB
+Use this file as your Custom CSS URL in GamePad Viewer.
+
+How to host:
+1) Upload this .css file to GitHub Gist or a GitHub repo
+2) Copy the RAW file link
+3) Paste that RAW link into the Custom CSS URL box
+
+Built as a full custom skin for the Xbox One layout.
+*/
+
+.controller.custom {
+  position: relative;
+  width: 1600px;
+  height: 900px;
+  background: url("data:image/svg+xml;utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%221600%22%20height=%22900%22%20viewBox=%220%200%201600%20900%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id=%22bg%22%20x1=%220%22%20y1=%220%22%20x2=%221%22%20y2=%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset=%220%25%22%20stop-color=%22#070b1a%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset=%2235%25%22%20stop-color=%22#1b1240%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset=%2270%25%22%20stop-color=%22#3a145e%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset=%22100%25%22%20stop-color=%22#0e1c3d%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%20%20%3CradialGradient%20id=%22nebula1%22%20cx=%2235%25%22%20cy=%2235%25%22%20r=%2245%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset=%220%25%22%20stop-color=%22#7cf3ff%22%20stop-opacity=%220.65%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset=%2255%25%22%20stop-color=%22#a855f7%22%20stop-opacity=%220.28%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset=%22100%25%22%20stop-color=%22#000000%22%20stop-opacity=%220%22/%3E%0A%20%20%20%20%3C/radialGradient%3E%0A%20%20%20%20%3CradialGradient%20id=%22nebula2%22%20cx=%2270%25%22%20cy=%2265%25%22%20r=%2240%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset=%220%25%22%20stop-color=%22#ff7bd5%22%20stop-opacity=%220.55%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset=%2250%25%22%20stop-color=%22#7c3aed%22%20stop-opacity=%220.25%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset=%22100%25%22%20stop-color=%22#000000%22%20stop-opacity=%220%22/%3E%0A%20%20%20%20%3C/radialGradient%3E%0A%20%20%20%20%3CradialGradient%20id=%22shine%22%20cx=%2250%25%22%20cy=%2225%25%22%20r=%2260%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset=%220%25%22%20stop-color=%22#ffffff%22%20stop-opacity=%220.22%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset=%22100%25%22%20stop-color=%22#ffffff%22%20stop-opacity=%220%22/%3E%0A%20%20%20%20%3C/radialGradient%3E%0A%20%20%20%20%3Cfilter%20id=%22softGlow%22%20x=%22-30%25%22%20y=%22-30%25%22%20width=%22160%25%22%20height=%22160%25%22%3E%0A%20%20%20%20%20%20%3CfeGaussianBlur%20stdDeviation=%2212%22%20result=%22b%22/%3E%0A%20%20%20%20%20%20%3CfeMerge%3E%0A%20%20%20%20%20%20%20%20%3CfeMergeNode%20in=%22b%22/%3E%0A%20%20%20%20%20%20%20%20%3CfeMergeNode%20in=%22SourceGraphic%22/%3E%0A%20%20%20%20%20%20%3C/feMerge%3E%0A%20%20%20%20%3C/filter%3E%0A%20%20%20%20%3CclipPath%20id=%22bodyClip%22%3E%0A%20%20%20%20%20%20%3Cpath%20d=%22M515%20232%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20C585%20178,%20690%20150,%20800%20150%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20C910%20150,%201015%20178,%201085%20232%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20C1145%20278,%201183%20338,%201200%20420%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20C1215%20492,%201238%20580,%201220%20658%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20C1211%20695,%201186%20724,%201146%20732%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20C1092%20742,%201050%20712,%201022%20650%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20L975%20546%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20C950%20494,%20913%20470,%20860%20470%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20L740%20470%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20C687%20470,%20650%20494,%20625%20546%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20L578%20650%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20C550%20712,%20508%20742,%20454%20732%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20C414%20724,%20389%20695,%20380%20658%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20C362%20580,%20385%20492,%20400%20420%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20C417%20338,%20455%20278,%20515%20232%20Z%22/%3E%0A%20%20%20%20%3C/clipPath%3E%0A%20%20%3C/defs%3E%0A%0A%20%20%3Crect%20width=%221600%22%20height=%22900%22%20fill=%22none%22/%3E%0A%0A%20%20%3C!--%20Controller%20body%20--%3E%0A%20%20%3Cg%3E%0A%20%20%20%20%3Cpath%20d=%22M515%20232%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C585%20178,%20690%20150,%20800%20150%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C910%20150,%201015%20178,%201085%20232%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C1145%20278,%201183%20338,%201200%20420%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C1215%20492,%201238%20580,%201220%20658%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C1211%20695,%201186%20724,%201146%20732%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C1092%20742,%201050%20712,%201022%20650%0A%20%20%20%20%20%20%20%20%20%20%20%20%20L975%20546%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C950%20494,%20913%20470,%20860%20470%0A%20%20%20%20%20%20%20%20%20%20%20%20%20L740%20470%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C687%20470,%20650%20494,%20625%20546%0A%20%20%20%20%20%20%20%20%20%20%20%20%20L578%20650%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C550%20712,%20508%20742,%20454%20732%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C414%20724,%20389%20695,%20380%20658%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C362%20580,%20385%20492,%20400%20420%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C417%20338,%20455%20278,%20515%20232%20Z%22%0A%20%20%20%20%20%20%20%20%20%20fill=%22url(#bg)%22%20stroke=%22#d8e5ff%22%20stroke-opacity=%220.28%22%20stroke-width=%228%22/%3E%0A%0A%20%20%20%20%3Cg%20clip-path=%22url(#bodyClip)%22%3E%0A%20%20%20%20%20%20%3Crect%20x=%22360%22%20y=%22140%22%20width=%22880%22%20height=%22620%22%20fill=%22url(#bg)%22/%3E%0A%20%20%20%20%20%20%3Crect%20x=%22360%22%20y=%22140%22%20width=%22880%22%20height=%22620%22%20fill=%22url(#nebula1)%22/%3E%0A%20%20%20%20%20%20%3Crect%20x=%22360%22%20y=%22140%22%20width=%22880%22%20height=%22620%22%20fill=%22url(#nebula2)%22/%3E%0A%20%20%20%20%20%20%3Crect%20x=%22360%22%20y=%22140%22%20width=%22880%22%20height=%22620%22%20fill=%22url(#shine)%22/%3E%0A%0A%20%20%20%20%20%20%3C!--%20stars%20--%3E%0A%20%20%20%20%20%20%3Cg%20fill=%22#ffffff%22%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx=%22510%22%20cy=%22270%22%20r=%222.2%22/%3E%3Ccircle%20cx=%22545%22%20cy=%22310%22%20r=%221.5%22/%3E%3Ccircle%20cx=%22585%22%20cy=%22255%22%20r=%221.8%22/%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx=%22640%22%20cy=%22345%22%20r=%222.4%22/%3E%3Ccircle%20cx=%22690%22%20cy=%22220%22%20r=%221.7%22/%3E%3Ccircle%20cx=%22735%22%20cy=%22290%22%20r=%221.3%22/%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx=%22770%22%20cy=%22235%22%20r=%222.1%22/%3E%3Ccircle%20cx=%22825%22%20cy=%22320%22%20r=%221.6%22/%3E%3Ccircle%20cx=%22875%22%20cy=%22248%22%20r=%222.5%22/%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx=%22935%22%20cy=%22340%22%20r=%221.5%22/%3E%3Ccircle%20cx=%22990%22%20cy=%22280%22%20r=%221.9%22/%3E%3Ccircle%20cx=%221045%22%20cy=%22355%22%20r=%222.2%22/%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx=%221090%22%20cy=%22250%22%20r=%221.4%22/%3E%3Ccircle%20cx=%221130%22%20cy=%22310%22%20r=%222.0%22/%3E%3Ccircle%20cx=%22470%22%20cy=%22420%22%20r=%221.8%22/%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx=%22540%22%20cy=%22510%22%20r=%221.4%22/%3E%3Ccircle%20cx=%22615%22%20cy=%22585%22%20r=%222.3%22/%3E%3Ccircle%20cx=%22700%22%20cy=%22520%22%20r=%221.7%22/%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx=%22770%22%20cy=%22610%22%20r=%222.0%22/%3E%3Ccircle%20cx=%22845%22%20cy=%22545%22%20r=%221.5%22/%3E%3Ccircle%20cx=%22920%22%20cy=%22620%22%20r=%222.4%22/%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx=%221000%22%20cy=%22520%22%20r=%221.6%22/%3E%3Ccircle%20cx=%221075%22%20cy=%22605%22%20r=%222.1%22/%3E%3Ccircle%20cx=%221145%22%20cy=%22465%22%20r=%221.9%22/%3E%0A%20%20%20%20%20%20%3C/g%3E%0A%0A%20%20%20%20%20%20%3C!--%20larger%20glow%20stars%20--%3E%0A%20%20%20%20%20%20%3Cg%20filter=%22url(#softGlow)%22%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx=%22600%22%20cy=%22300%22%20r=%223.3%22%20fill=%22#8cf2ff%22/%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx=%22930%22%20cy=%22260%22%20r=%223.5%22%20fill=%22#ffd0fb%22/%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx=%22740%22%20cy=%22575%22%20r=%223.6%22%20fill=%22#b5c7ff%22/%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx=%221040%22%20cy=%22555%22%20r=%223.2%22%20fill=%22#8cf2ff%22/%3E%0A%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%3C/g%3E%0A%20%20%3C/g%3E%0A%0A%20%20%3C!--%20top%20center%20plate%20--%3E%0A%20%20%3Crect%20x=%22690%22%20y=%22175%22%20width=%22220%22%20height=%2295%22%20rx=%2244%22%20fill=%22#11182f%22%20stroke=%22#d8e5ff%22%20stroke-opacity=%220.18%22/%3E%0A%20%20%3Ccircle%20cx=%22800%22%20cy=%22223%22%20r=%2222%22%20fill=%22none%22%20stroke=%22#d8e5ff%22%20stroke-opacity=%220.75%22%20stroke-width=%226%22/%3E%0A%20%20%3Cpath%20d=%22M790%20223%20L800%20212%20L810%20223%22%20fill=%22none%22%20stroke=%22#d8e5ff%22%20stroke-opacity=%220.75%22%20stroke-width=%226%22%20stroke-linecap=%22round%22%20stroke-linejoin=%22round%22/%3E%0A%0A%20%20%3C!--%20sticks%20--%3E%0A%20%20%3Cg%3E%0A%20%20%20%20%3Ccircle%20cx=%22625%22%20cy=%22405%22%20r=%2278%22%20fill=%22#11182f%22%20stroke=%22#d8e5ff%22%20stroke-opacity=%220.2%22/%3E%0A%20%20%20%20%3Ccircle%20cx=%22625%22%20cy=%22405%22%20r=%2252%22%20fill=%22#1b2545%22%20stroke=%22#ffffff%22%20stroke-opacity=%220.12%22/%3E%0A%20%20%20%20%3Ccircle%20cx=%22960%22%20cy=%22525%22%20r=%2278%22%20fill=%22#11182f%22%20stroke=%22#d8e5ff%22%20stroke-opacity=%220.2%22/%3E%0A%20%20%20%20%3Ccircle%20cx=%22960%22%20cy=%22525%22%20r=%2252%22%20fill=%22#1b2545%22%20stroke=%22#ffffff%22%20stroke-opacity=%220.12%22/%3E%0A%20%20%3C/g%3E%0A%0A%20%20%3C!--%20dpad%20--%3E%0A%20%20%3Cg%20fill=%22#151d38%22%20stroke=%22#d8e5ff%22%20stroke-opacity=%220.14%22%3E%0A%20%20%20%20%3Crect%20x=%22470%22%20y=%22500%22%20width=%22126%22%20height=%2240%22%20rx=%2212%22/%3E%0A%20%20%20%20%3Crect%20x=%22513%22%20y=%22457%22%20width=%2240%22%20height=%22126%22%20rx=%2212%22/%3E%0A%20%20%3C/g%3E%0A%0A%20%20%3C!--%20face%20buttons%20--%3E%0A%20%20%3Cg%3E%0A%20%20%20%20%3Ccircle%20cx=%221115%22%20cy=%22405%22%20r=%2228%22%20fill=%22#2ad7ff%22%20fill-opacity=%220.90%22/%3E%0A%20%20%20%20%3Ccircle%20cx=%221170%22%20cy=%22350%22%20r=%2228%22%20fill=%22#ff6ecf%22%20fill-opacity=%220.90%22/%3E%0A%20%20%20%20%3Ccircle%20cx=%221060%22%20cy=%22350%22%20r=%2228%22%20fill=%22#8b5cf6%22%20fill-opacity=%220.90%22/%3E%0A%20%20%20%20%3Ccircle%20cx=%221115%22%20cy=%22295%22%20r=%2228%22%20fill=%22#7df9ff%22%20fill-opacity=%220.90%22/%3E%0A%20%20%20%20%3Ctext%20x=%221115%22%20y=%22414%22%20font-size=%2224%22%20text-anchor=%22middle%22%20fill=%22#08101d%22%20font-family=%22Arial,%20sans-serif%22%20font-weight=%22700%22%3EA%3C/text%3E%0A%20%20%20%20%3Ctext%20x=%221170%22%20y=%22359%22%20font-size=%2224%22%20text-anchor=%22middle%22%20fill=%22#08101d%22%20font-family=%22Arial,%20sans-serif%22%20font-weight=%22700%22%3EB%3C/text%3E%0A%20%20%20%20%3Ctext%20x=%221060%22%20y=%22359%22%20font-size=%2224%22%20text-anchor=%22middle%22%20fill=%22#08101d%22%20font-family=%22Arial,%20sans-serif%22%20font-weight=%22700%22%3EX%3C/text%3E%0A%20%20%20%20%3Ctext%20x=%221115%22%20y=%22304%22%20font-size=%2224%22%20text-anchor=%22middle%22%20fill=%22#08101d%22%20font-family=%22Arial,%20sans-serif%22%20font-weight=%22700%22%3EY%3C/text%3E%0A%20%20%3C/g%3E%0A%0A%20%20%3C!--%20menu/view%20--%3E%0A%20%20%3Cg%20fill=%22#151d38%22%20stroke=%22#d8e5ff%22%20stroke-opacity=%220.18%22%3E%0A%20%20%20%20%3Crect%20x=%22668%22%20y=%22330%22%20width=%2246%22%20height=%2230%22%20rx=%228%22/%3E%0A%20%20%20%20%3Crect%20x=%22886%22%20y=%22330%22%20width=%2246%22%20height=%2230%22%20rx=%228%22/%3E%0A%20%20%3C/g%3E%0A%0A%20%20%3C!--%20shoulder%20hints%20--%3E%0A%20%20%3Cpath%20d=%22M565%20190%20C635%20152,%20705%20145,%20770%20163%22%20fill=%22none%22%20stroke=%22#d8e5ff%22%20stroke-opacity=%220.18%22%20stroke-width=%2210%22%20stroke-linecap=%22round%22/%3E%0A%20%20%3Cpath%20d=%22M1035%20190%20C965%20152,%20895%20145,%20830%20163%22%20fill=%22none%22%20stroke=%22#d8e5ff%22%20stroke-opacity=%220.18%22%20stroke-width=%2210%22%20stroke-linecap=%22round%22/%3E%0A%3C/svg%3E%0A") no-repeat center center;
+  background-size: contain;
+  image-rendering: auto;
+  filter: drop-shadow(0 0 24px rgba(90, 180, 255, .28)) drop-shadow(0 0 52px rgba(191, 85, 255, .18));
+  overflow: visible;
+}
+
+.controller.custom::before {
+  content: "";
+  position: absolute;
+  inset: 90px 220px 90px 220px;
+  border-radius: 42% 42% 46% 46% / 36% 36% 52% 52%;
+  background:
+    radial-gradient(circle at 24% 28%, rgba(120,245,255,.16), transparent 20%),
+    radial-gradient(circle at 72% 66%, rgba(255,120,220,.17), transparent 24%),
+    radial-gradient(circle at 48% 50%, rgba(150,100,255,.14), transparent 38%);
+  mix-blend-mode: screen;
+  filter: blur(14px) saturate(130%);
+  animation: gpvGalaxyPulse 5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.controller.custom::after {
+  content: "";
+  position: absolute;
+  inset: 110px 240px 120px 240px;
+  border-radius: 40% 40% 45% 45% / 34% 34% 50% 50%;
+  box-shadow:
+    0 0 16px rgba(70, 220, 255, .35),
+    0 0 36px rgba(187, 95, 255, .22),
+    inset 0 0 24px rgba(255,255,255,.06);
+  animation: gpvRgbHalo 8s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes gpvGalaxyPulse {
+  0%, 100% { transform: scale(1); opacity: .88; }
+  50% { transform: scale(1.02); opacity: 1; }
+}
+
+@keyframes gpvRgbHalo {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+.custom.disconnected {
+  background: url("data:image/svg+xml;utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%221600%22%20height=%22900%22%20viewBox=%220%200%201600%20900%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id=%22bg%22%20x1=%220%22%20y1=%220%22%20x2=%221%22%20y2=%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset=%220%25%22%20stop-color=%22#070b1a%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset=%2235%25%22%20stop-color=%22#1b1240%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset=%2270%25%22%20stop-color=%22#3a145e%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset=%22100%25%22%20stop-color=%22#0e1c3d%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%20%20%3CradialGradient%20id=%22nebula1%22%20cx=%2235%25%22%20cy=%2235%25%22%20r=%2245%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset=%220%25%22%20stop-color=%22#7cf3ff%22%20stop-opacity=%220.65%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset=%2255%25%22%20stop-color=%22#a855f7%22%20stop-opacity=%220.28%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset=%22100%25%22%20stop-color=%22#000000%22%20stop-opacity=%220%22/%3E%0A%20%20%20%20%3C/radialGradient%3E%0A%20%20%20%20%3CradialGradient%20id=%22nebula2%22%20cx=%2270%25%22%20cy=%2265%25%22%20r=%2240%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset=%220%25%22%20stop-color=%22#ff7bd5%22%20stop-opacity=%220.55%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset=%2250%25%22%20stop-color=%22#7c3aed%22%20stop-opacity=%220.25%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset=%22100%25%22%20stop-color=%22#000000%22%20stop-opacity=%220%22/%3E%0A%20%20%20%20%3C/radialGradient%3E%0A%20%20%20%20%3CradialGradient%20id=%22shine%22%20cx=%2250%25%22%20cy=%2225%25%22%20r=%2260%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset=%220%25%22%20stop-color=%22#ffffff%22%20stop-opacity=%220.22%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset=%22100%25%22%20stop-color=%22#ffffff%22%20stop-opacity=%220%22/%3E%0A%20%20%20%20%3C/radialGradient%3E%0A%20%20%20%20%3Cfilter%20id=%22softGlow%22%20x=%22-30%25%22%20y=%22-30%25%22%20width=%22160%25%22%20height=%22160%25%22%3E%0A%20%20%20%20%20%20%3CfeGaussianBlur%20stdDeviation=%2212%22%20result=%22b%22/%3E%0A%20%20%20%20%20%20%3CfeMerge%3E%0A%20%20%20%20%20%20%20%20%3CfeMergeNode%20in=%22b%22/%3E%0A%20%20%20%20%20%20%20%20%3CfeMergeNode%20in=%22SourceGraphic%22/%3E%0A%20%20%20%20%20%20%3C/feMerge%3E%0A%20%20%20%20%3C/filter%3E%0A%20%20%20%20%3CclipPath%20id=%22bodyClip%22%3E%0A%20%20%20%20%20%20%3Cpath%20d=%22M515%20232%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20C585%20178,%20690%20150,%20800%20150%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20C910%20150,%201015%20178,%201085%20232%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20C1145%20278,%201183%20338,%201200%20420%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20C1215%20492,%201238%20580,%201220%20658%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20C1211%20695,%201186%20724,%201146%20732%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20C1092%20742,%201050%20712,%201022%20650%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20L975%20546%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20C950%20494,%20913%20470,%20860%20470%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20L740%20470%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20C687%20470,%20650%20494,%20625%20546%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20L578%20650%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20C550%20712,%20508%20742,%20454%20732%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20C414%20724,%20389%20695,%20380%20658%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20C362%20580,%20385%20492,%20400%20420%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20C417%20338,%20455%20278,%20515%20232%20Z%22/%3E%0A%20%20%20%20%3C/clipPath%3E%0A%20%20%3C/defs%3E%0A%0A%20%20%3Crect%20width=%221600%22%20height=%22900%22%20fill=%22none%22/%3E%0A%0A%20%20%3C!--%20Controller%20body%20--%3E%0A%20%20%3Cg%3E%0A%20%20%20%20%3Cpath%20d=%22M515%20232%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C585%20178,%20690%20150,%20800%20150%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C910%20150,%201015%20178,%201085%20232%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C1145%20278,%201183%20338,%201200%20420%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C1215%20492,%201238%20580,%201220%20658%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C1211%20695,%201186%20724,%201146%20732%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C1092%20742,%201050%20712,%201022%20650%0A%20%20%20%20%20%20%20%20%20%20%20%20%20L975%20546%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C950%20494,%20913%20470,%20860%20470%0A%20%20%20%20%20%20%20%20%20%20%20%20%20L740%20470%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C687%20470,%20650%20494,%20625%20546%0A%20%20%20%20%20%20%20%20%20%20%20%20%20L578%20650%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C550%20712,%20508%20742,%20454%20732%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C414%20724,%20389%20695,%20380%20658%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C362%20580,%20385%20492,%20400%20420%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C417%20338,%20455%20278,%20515%20232%20Z%22%0A%20%20%20%20%20%20%20%20%20%20fill=%22url(#bg)%22%20stroke=%22#d8e5ff%22%20stroke-opacity=%220.28%22%20stroke-width=%228%22/%3E%0A%0A%20%20%20%20%3Cg%20clip-path=%22url(#bodyClip)%22%3E%0A%20%20%20%20%20%20%3Crect%20x=%22360%22%20y=%22140%22%20width=%22880%22%20height=%22620%22%20fill=%22url(#bg)%22/%3E%0A%20%20%20%20%20%20%3Crect%20x=%22360%22%20y=%22140%22%20width=%22880%22%20height=%22620%22%20fill=%22url(#nebula1)%22/%3E%0A%20%20%20%20%20%20%3Crect%20x=%22360%22%20y=%22140%22%20width=%22880%22%20height=%22620%22%20fill=%22url(#nebula2)%22/%3E%0A%20%20%20%20%20%20%3Crect%20x=%22360%22%20y=%22140%22%20width=%22880%22%20height=%22620%22%20fill=%22url(#shine)%22/%3E%0A%0A%20%20%20%20%20%20%3C!--%20stars%20--%3E%0A%20%20%20%20%20%20%3Cg%20fill=%22#ffffff%22%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx=%22510%22%20cy=%22270%22%20r=%222.2%22/%3E%3Ccircle%20cx=%22545%22%20cy=%22310%22%20r=%221.5%22/%3E%3Ccircle%20cx=%22585%22%20cy=%22255%22%20r=%221.8%22/%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx=%22640%22%20cy=%22345%22%20r=%222.4%22/%3E%3Ccircle%20cx=%22690%22%20cy=%22220%22%20r=%221.7%22/%3E%3Ccircle%20cx=%22735%22%20cy=%22290%22%20r=%221.3%22/%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx=%22770%22%20cy=%22235%22%20r=%222.1%22/%3E%3Ccircle%20cx=%22825%22%20cy=%22320%22%20r=%221.6%22/%3E%3Ccircle%20cx=%22875%22%20cy=%22248%22%20r=%222.5%22/%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx=%22935%22%20cy=%22340%22%20r=%221.5%22/%3E%3Ccircle%20cx=%22990%22%20cy=%22280%22%20r=%221.9%22/%3E%3Ccircle%20cx=%221045%22%20cy=%22355%22%20r=%222.2%22/%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx=%221090%22%20cy=%22250%22%20r=%221.4%22/%3E%3Ccircle%20cx=%221130%22%20cy=%22310%22%20r=%222.0%22/%3E%3Ccircle%20cx=%22470%22%20cy=%22420%22%20r=%221.8%22/%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx=%22540%22%20cy=%22510%22%20r=%221.4%22/%3E%3Ccircle%20cx=%22615%22%20cy=%22585%22%20r=%222.3%22/%3E%3Ccircle%20cx=%22700%22%20cy=%22520%22%20r=%221.7%22/%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx=%22770%22%20cy=%22610%22%20r=%222.0%22/%3E%3Ccircle%20cx=%22845%22%20cy=%22545%22%20r=%221.5%22/%3E%3Ccircle%20cx=%22920%22%20cy=%22620%22%20r=%222.4%22/%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx=%221000%22%20cy=%22520%22%20r=%221.6%22/%3E%3Ccircle%20cx=%221075%22%20cy=%22605%22%20r=%222.1%22/%3E%3Ccircle%20cx=%221145%22%20cy=%22465%22%20r=%221.9%22/%3E%0A%20%20%20%20%20%20%3C/g%3E%0A%0A%20%20%20%20%20%20%3C!--%20larger%20glow%20stars%20--%3E%0A%20%20%20%20%20%20%3Cg%20filter=%22url(#softGlow)%22%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx=%22600%22%20cy=%22300%22%20r=%223.3%22%20fill=%22#8cf2ff%22/%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx=%22930%22%20cy=%22260%22%20r=%223.5%22%20fill=%22#ffd0fb%22/%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx=%22740%22%20cy=%22575%22%20r=%223.6%22%20fill=%22#b5c7ff%22/%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx=%221040%22%20cy=%22555%22%20r=%223.2%22%20fill=%22#8cf2ff%22/%3E%0A%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%3C/g%3E%0A%20%20%3C/g%3E%0A%0A%20%20%3C!--%20top%20center%20plate%20--%3E%0A%20%20%3Crect%20x=%22690%22%20y=%22175%22%20width=%22220%22%20height=%2295%22%20rx=%2244%22%20fill=%22#11182f%22%20stroke=%22#d8e5ff%22%20stroke-opacity=%220.18%22/%3E%0A%20%20%3Ccircle%20cx=%22800%22%20cy=%22223%22%20r=%2222%22%20fill=%22none%22%20stroke=%22#d8e5ff%22%20stroke-opacity=%220.75%22%20stroke-width=%226%22/%3E%0A%20%20%3Cpath%20d=%22M790%20223%20L800%20212%20L810%20223%22%20fill=%22none%22%20stroke=%22#d8e5ff%22%20stroke-opacity=%220.75%22%20stroke-width=%226%22%20stroke-linecap=%22round%22%20stroke-linejoin=%22round%22/%3E%0A%0A%20%20%3C!--%20sticks%20--%3E%0A%20%20%3Cg%3E%0A%20%20%20%20%3Ccircle%20cx=%22625%22%20cy=%22405%22%20r=%2278%22%20fill=%22#11182f%22%20stroke=%22#d8e5ff%22%20stroke-opacity=%220.2%22/%3E%0A%20%20%20%20%3Ccircle%20cx=%22625%22%20cy=%22405%22%20r=%2252%22%20fill=%22#1b2545%22%20stroke=%22#ffffff%22%20stroke-opacity=%220.12%22/%3E%0A%20%20%20%20%3Ccircle%20cx=%22960%22%20cy=%22525%22%20r=%2278%22%20fill=%22#11182f%22%20stroke=%22#d8e5ff%22%20stroke-opacity=%220.2%22/%3E%0A%20%20%20%20%3Ccircle%20cx=%22960%22%20cy=%22525%22%20r=%2252%22%20fill=%22#1b2545%22%20stroke=%22#ffffff%22%20stroke-opacity=%220.12%22/%3E%0A%20%20%3C/g%3E%0A%0A%20%20%3C!--%20dpad%20--%3E%0A%20%20%3Cg%20fill=%22#151d38%22%20stroke=%22#d8e5ff%22%20stroke-opacity=%220.14%22%3E%0A%20%20%20%20%3Crect%20x=%22470%22%20y=%22500%22%20width=%22126%22%20height=%2240%22%20rx=%2212%22/%3E%0A%20%20%20%20%3Crect%20x=%22513%22%20y=%22457%22%20width=%2240%22%20height=%22126%22%20rx=%2212%22/%3E%0A%20%20%3C/g%3E%0A%0A%20%20%3C!--%20face%20buttons%20--%3E%0A%20%20%3Cg%3E%0A%20%20%20%20%3Ccircle%20cx=%221115%22%20cy=%22405%22%20r=%2228%22%20fill=%22#2ad7ff%22%20fill-opacity=%220.90%22/%3E%0A%20%20%20%20%3Ccircle%20cx=%221170%22%20cy=%22350%22%20r=%2228%22%20fill=%22#ff6ecf%22%20fill-opacity=%220.90%22/%3E%0A%20%20%20%20%3Ccircle%20cx=%221060%22%20cy=%22350%22%20r=%2228%22%20fill=%22#8b5cf6%22%20fill-opacity=%220.90%22/%3E%0A%20%20%20%20%3Ccircle%20cx=%221115%22%20cy=%22295%22%20r=%2228%22%20fill=%22#7df9ff%22%20fill-opacity=%220.90%22/%3E%0A%20%20%20%20%3Ctext%20x=%221115%22%20y=%22414%22%20font-size=%2224%22%20text-anchor=%22middle%22%20fill=%22#08101d%22%20font-family=%22Arial,%20sans-serif%22%20font-weight=%22700%22%3EA%3C/text%3E%0A%20%20%20%20%3Ctext%20x=%221170%22%20y=%22359%22%20font-size=%2224%22%20text-anchor=%22middle%22%20fill=%22#08101d%22%20font-family=%22Arial,%20sans-serif%22%20font-weight=%22700%22%3EB%3C/text%3E%0A%20%20%20%20%3Ctext%20x=%221060%22%20y=%22359%22%20font-size=%2224%22%20text-anchor=%22middle%22%20fill=%22#08101d%22%20font-family=%22Arial,%20sans-serif%22%20font-weight=%22700%22%3EX%3C/text%3E%0A%20%20%20%20%3Ctext%20x=%221115%22%20y=%22304%22%20font-size=%2224%22%20text-anchor=%22middle%22%20fill=%22#08101d%22%20font-family=%22Arial,%20sans-serif%22%20font-weight=%22700%22%3EY%3C/text%3E%0A%20%20%3C/g%3E%0A%0A%20%20%3C!--%20menu/view%20--%3E%0A%20%20%3Cg%20fill=%22#151d38%22%20stroke=%22#d8e5ff%22%20stroke-opacity=%220.18%22%3E%0A%20%20%20%20%3Crect%20x=%22668%22%20y=%22330%22%20width=%2246%22%20height=%2230%22%20rx=%228%22/%3E%0A%20%20%20%20%3Crect%20x=%22886%22%20y=%22330%22%20width=%2246%22%20height=%2230%22%20rx=%228%22/%3E%0A%20%20%3C/g%3E%0A%0A%20%20%3C!--%20shoulder%20hints%20--%3E%0A%20%20%3Cpath%20d=%22M565%20190%20C635%20152,%20705%20145,%20770%20163%22%20fill=%22none%22%20stroke=%22#d8e5ff%22%20stroke-opacity=%220.18%22%20stroke-width=%2210%22%20stroke-linecap=%22round%22/%3E%0A%20%20%3Cpath%20d=%22M1035%20190%20C965%20152,%20895%20145,%20830%20163%22%20fill=%22none%22%20stroke=%22#d8e5ff%22%20stroke-opacity=%220.18%22%20stroke-width=%2210%22%20stroke-linecap=%22round%22/%3E%0A%3C/svg%3E%0A") no-repeat center center;
+  background-size: contain;
+  opacity: .65;
+  filter: grayscale(.1) brightness(.75) drop-shadow(0 0 24px rgba(90, 180, 255, .18));
+}
+
+.custom.disconnected div {
+  display: none;
+}
+
+/* Hide GPV's disconnect text if present */
+.custom.disconnected::before,
+.custom.disconnected::after {
+  opacity: .22;
+}
+
+/* shared glow styles */
+.custom .button,
+.custom .face,
+.custom .trigger,
+.custom .bumper,
+.custom .back,
+.custom .start,
+.custom .stick,
+.custom .quadrant {
+  position: absolute;
+  transition: transform .05s ease, opacity .08s ease, filter .08s ease, box-shadow .08s ease;
+}
+
+.custom .button,
+.custom .face,
+.custom .trigger,
+.custom .bumper,
+.custom .back,
+.custom .start {
+  opacity: .08;
+}
+
+/* triggers */
+.custom .triggers {
+  position: absolute;
+  left: 500px;
+  top: 148px;
+  width: 600px;
+  height: 120px;
+}
+.custom .trigger {
+  width: 150px;
+  height: 84px;
+  border-radius: 42px 42px 18px 18px;
+  background: linear-gradient(180deg, rgba(150,240,255,.88), rgba(128,80,255,.65));
+  filter: blur(.2px);
+}
+.custom .trigger.left {
+  left: 0;
+  transform: rotate(-8deg);
+}
+.custom .trigger.right {
+  right: 0;
+  transform: rotate(8deg);
+}
+.custom .trigger.pressed {
+  opacity: .98;
+  box-shadow:
+    0 0 18px rgba(110,240,255,.85),
+    0 0 36px rgba(167,95,255,.55);
+}
+
+/* bumpers */
+.custom .bumpers {
+  position: absolute;
+  left: 515px;
+  top: 192px;
+  width: 570px;
+  height: 80px;
+}
+.custom .bumper {
+  width: 130px;
+  height: 34px;
+  border-radius: 18px;
+  background: linear-gradient(90deg, rgba(255,255,255,.95), rgba(140,224,255,.8));
+}
+.custom .bumper.left {
+  left: 0;
+}
+.custom .bumper.right {
+  right: 0;
+}
+.custom .bumper.pressed {
+  opacity: 1;
+  box-shadow:
+    0 0 14px rgba(124,243,255,.95),
+    0 0 26px rgba(184,100,255,.52);
+  transform: translateY(1px);
+}
+
+/* xbox light */
+.custom .quadrant {
+  top: 198px;
+  left: 756px;
+  width: 88px;
+  height: 88px;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(255,255,255,.9) 0 10%, rgba(160,240,255,.9) 11% 21%, rgba(0,0,0,0) 22%),
+    radial-gradient(circle at 50% 50%, rgba(120,250,255,.3), rgba(168,85,247,.14) 45%, rgba(0,0,0,0) 70%);
+  opacity: .75;
+  animation: gpvXboxLight 4s ease-in-out infinite;
+}
+.custom .quadrant.p0,
+.custom .quadrant.p1,
+.custom .quadrant.p2,
+.custom .quadrant.p3 {
+  opacity: .95;
+}
+@keyframes gpvXboxLight {
+  0%,100% { filter: hue-rotate(0deg); }
+  50% { filter: hue-rotate(120deg); }
+}
+
+/* menu / view */
+.custom .arrows {
+  position: absolute;
+  left: 660px;
+  top: 325px;
+  width: 280px;
+  height: 60px;
+}
+.custom .back,
+.custom .start {
+  top: 0;
+  width: 48px;
+  height: 28px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(255,255,255,.9), rgba(120,170,255,.55));
+}
+.custom .back {
+  left: 0;
+}
+.custom .start {
+  right: 0;
+}
+.custom .back.pressed,
+.custom .start.pressed {
+  opacity: 1;
+  box-shadow: 0 0 14px rgba(125,245,255,.85), 0 0 24px rgba(170,85,255,.45);
+}
+
+/* face buttons */
+.custom .abxy {
+  position: absolute;
+  left: 1018px;
+  top: 247px;
+  width: 210px;
+  height: 220px;
+}
+.custom .button {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+.custom .button.a {
+  left: 58px;
+  top: 104px;
+  background: radial-gradient(circle at 35% 30%, rgba(255,255,255,.95), rgba(42,215,255,.9) 45%, rgba(42,215,255,.45) 70%, rgba(42,215,255,.12) 100%);
+}
+.custom .button.b {
+  left: 112px;
+  top: 50px;
+  background: radial-gradient(circle at 35% 30%, rgba(255,255,255,.95), rgba(255,110,207,.92) 45%, rgba(255,110,207,.45) 70%, rgba(255,110,207,.12) 100%);
+}
+.custom .button.x {
+  left: 0;
+  top: 50px;
+  background: radial-gradient(circle at 35% 30%, rgba(255,255,255,.95), rgba(139,92,246,.92) 45%, rgba(139,92,246,.45) 70%, rgba(139,92,246,.12) 100%);
+}
+.custom .button.y {
+  left: 58px;
+  top: 0;
+  background: radial-gradient(circle at 35% 30%, rgba(255,255,255,.95), rgba(125,249,255,.92) 45%, rgba(125,249,255,.45) 70%, rgba(125,249,255,.12) 100%);
+}
+.custom .button.pressed {
+  opacity: 1;
+  transform: scale(1.08);
+  box-shadow:
+    0 0 14px currentColor,
+    0 0 30px rgba(255,255,255,.25);
+}
+
+/* dpad */
+.custom .dpad {
+  position: absolute;
+  left: 452px;
+  top: 455px;
+  width: 170px;
+  height: 150px;
+}
+.custom .face {
+  background: linear-gradient(180deg, rgba(255,255,255,.92), rgba(120,190,255,.5));
+}
+.custom .face.up,
+.custom .face.down {
+  left: 63px;
+  width: 44px;
+  height: 54px;
+  border-radius: 10px;
+}
+.custom .face.left,
+.custom .face.right {
+  top: 53px;
+  width: 54px;
+  height: 44px;
+  border-radius: 10px;
+}
+.custom .face.up { top: 0; }
+.custom .face.down { top: 96px; }
+.custom .face.left { left: 0; }
+.custom .face.right { left: 116px; }
+.custom .face.pressed {
+  opacity: 1;
+  box-shadow: 0 0 16px rgba(124,243,255,.9), 0 0 28px rgba(168,85,247,.45);
+}
+
+/* sticks */
+.custom .sticks {
+  position: absolute;
+  left: 548px;
+  top: 340px;
+  width: 520px;
+  height: 320px;
+}
+.custom .stick {
+  width: 118px;
+  height: 118px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 40% 35%, rgba(255,255,255,.22), rgba(60,76,120,.16) 35%, rgba(0,0,0,0) 36%),
+    radial-gradient(circle at 50% 50%, rgba(100,135,255,.16), rgba(160,80,255,.10) 55%, rgba(0,0,0,0) 56%);
+  border: 3px solid rgba(200,230,255,.22);
+}
+.custom .stick.left {
+  left: 0;
+  top: 22px;
+}
+.custom .stick.right {
+  left: 342px;
+  top: 142px;
+}
+.custom .stick.pressed {
+  box-shadow:
+    0 0 18px rgba(124,243,255,.55),
+    inset 0 0 24px rgba(168,85,247,.22);
+  border-color: rgba(255,255,255,.55);
+}
+
+/* trigger buttons fallback if GPV ever uses them */
+.custom .trigger-button.left,
+.custom .trigger-button.right {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 16px;
+  opacity: 0;
+}
+.custom .trigger-button.left { left: 412px; top: 182px; }
+.custom .trigger-button.right { left: 1118px; top: 182px; }
+.custom .trigger-button.left.pressed,
+.custom .trigger-button.right.pressed {
+  opacity: 1;
+  box-shadow: 0 0 18px rgba(124,243,255,.85), 0 0 28px rgba(168,85,247,.45);
+}
